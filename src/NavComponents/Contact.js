@@ -16,7 +16,7 @@ const Contact = () => {
                         className="h-12 w-full sm:h-14 md:w-[20rem] lg:w-[26rem] px-6 sm:py-3 text-black text-base sm:text-2xl rounded-lg focus:outline-none"
                         placeholder="Email address"
                     />
-                    <button className="h-12  border-2 border-line hover:text-line hover:bg-white  bg-line text-white font-bold rounded-lg sm:py-3 px-16 text-base sm:text-2xl sm:h-full w-full md:w-auto">
+                    <button className="h-12  border-4 border-line hover:text-line hover:bg-white  bg-line text-white font-bold rounded-lg sm:py-3 px-16 text-base sm:text-2xl sm:h-full w-full md:w-auto">
                         Contact
                     </button>
                 </div>
@@ -45,7 +45,7 @@ const Contact = () => {
 
                 </div> 
                 <div>
-                <button className="  border-2 border-line hover:text-line hover:bg-white h-10 w-36 sm:h-12  bg-line text-white font-bold rounded-lg sm:w-44 text-base sm:text-2xl ">
+                <button  className="  border-2 border-line hover:text-line hover:bg-white h-10 w-36 sm:h-12  bg-line text-white font-bold rounded-lg sm:w-44 text-base sm:text-2xl ">
                         Contact
                     </button>
                 </div>

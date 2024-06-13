@@ -1,10 +1,10 @@
 import { FaArrowRight } from "react-icons/fa";
 function ProgramHeader (){
     return(
-        <div id="program" className="grid sm:gap-0 gap-8  pb-8  pt-36 h-full md:pt-44 md:pl-16 bg-[#0c2543]  md:flex  md:space-x-10 md:h-screen w-full">
-        <div className="px-4 md:px-0 grid place-items-center md:place-items-baseline  gap-10 md:gap-6  md:w-[61%]">
+        <div id="program" className="grid sm:gap-0 gap-8  pb-8  pt-24 h-full md:pt-44 md:pl-16 bg-[#0c2543]  md:flex  md:space-x-10 md:h-screen w-full">
+        <div className=" px-4 md:px-0 grid place-items-center md:place-items-baseline  gap-10 md:gap-6  md:w-[61%]">
           <div className="w-max h-8">
-            <span className="pl-6 pb-3 pt-3 pr-6 text-2xl bg-line text-white font-semibold rounded-l-full rounded-r-full">
+            <span className="pl-6 pb-3 pt-3 pr-6 text-xl sm:text-2xl bg-line text-white font-semibold rounded-l-full rounded-r-full">
               Craft Your Clarified Era..
             </span>
           </div>

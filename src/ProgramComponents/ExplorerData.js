@@ -1,12 +1,20 @@
-import React,{useContext} from "react";
+import React,{useContext,useEffect,useRef} from "react";
 import { IoArrowBackCircleSharp } from "react-icons/io5";
 import { GlobalStateContext } from "../UseContextComponents/GlobalStateProvider";
 
 function ExplorerData({ explorerData, handleProgram }) {
     const { openRegisterForm} = useContext( GlobalStateContext);
+    const explorerRef = useRef(null);
+    useEffect(() => {
+        if (explorerRef.current) {
+            explorerRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+    }, []);
+    
+    
     return (
         <>
-            <div className="bg-[#0c2543] pt-20">
+            <div ref={explorerRef}  className="bg-[#0c2543] pt-20">
                 <div className="p-0 pt-4 sm:p-16 md:p-24 font-redhat">
                     <div className="bg-white rounded-lg p-8 grid gap-8 sm:gap-12">
                         <div className="flex justify-between">

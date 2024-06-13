@@ -4,9 +4,11 @@
 
 @import 'tailwindcss/utilities';
 
-input[name="name"]:focus ~.name{
-    @apply bg-white  text-green-500 transform -translate-y-7 -translate-x-4 scale-75;
+input[name="name"]:focus ~ .name {
+  @apply bg-white text-green-500 transform -translate-y-7 -translate-x-4 scale-75;
 }
+
+
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 

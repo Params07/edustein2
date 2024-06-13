@@ -19,6 +19,20 @@ function Nav() {
   const handleClick = (id) => {
     setActive(id);
     setNavBar(false);
+    const element = document.getElementById(id);
+    const offset = 40; 
+    
+    if (element) {
+        const rect = element.getBoundingClientRect();
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const targetScrollTop = scrollTop + rect.top - offset;
+    
+        window.scrollTo({
+            top: targetScrollTop,
+            behavior: "smooth",
+        });
+    }
+    
   };
 
  
@@ -44,9 +58,9 @@ function Nav() {
             }`}
           >
             {navItems.map((item) => (
-              <a
+              <span
                 key={item.id}
-                href={`#${item.id}`}
+               
                 className={`px-16 md:px-0  cursor-pointer  ${
                   active === item.id ? 'text-line md:text-navItems md:underline md:underline-offset-8' : 'text-navItems'
                 }`}
@@ -58,14 +72,14 @@ function Nav() {
                 onClick={() => handleClick(item.id)}
               >
                 {item.label}
-              </a>
+              </span>
             ))}
-            <a
+            <span
               className={`px-16 md:px-0 cursor-pointer `}
               onClick={() => openRegisterForm()}
             >
               Register
-            </a>
+            </span>
           </div>
         </div>
       </nav>
