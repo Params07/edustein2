@@ -14,7 +14,7 @@ function ExplorerData({ explorerData, handleProgram }) {
     
     return (
         <>
-            <div ref={explorerRef}  className="bg-[#0c2543] pt-20">
+            <div ref={explorerRef} id="program"  className="bg-[#0c2543] pt-20">
                 <div className="p-4 pt-4 sm:p-16 md:p-24 font-redhat">
                     <div className="bg-white rounded-lg p-8 grid gap-8 sm:gap-12">
                         <div className="flex justify-between">
