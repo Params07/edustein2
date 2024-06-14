@@ -1,10 +1,10 @@
 import { FaArrowRight } from "react-icons/fa";
 function ProgramHeader (){
     return(
-        <div id="program" className="grid sm:gap-0 gap-8  pb-8  pt-24 h-full md:pt-44 md:pl-16 bg-[#0c2543]  md:flex  md:space-x-10 md:h-screen w-full">
-        <div className=" px-4 md:px-0 grid place-items-center md:place-items-baseline  gap-10 md:gap-6  md:w-[61%]">
+        <div id="program" className="grid lg:gap-0 gap-8  pb-8  pt-28 h-full md:pt-44 lg:px-16 bg-[#0c2543]  lg:flex  lg:space-x-10 lg:h-screen w-full">
+        <div className=" px-4 sm:px-16 lg:px-0 grid  gap-10 lg:gap-6  lg:w-[60%]">
           <div className="w-max h-8">
-            <span className="pl-6 pb-3 pt-3 pr-6 text-xl sm:text-2xl bg-line text-white font-semibold rounded-l-full rounded-r-full">
+            <span className="pl-6 pb-3 pt-3 pr-6 text-xl sm:text-2xl bg-line text-white font-redhat font-semibold rounded-l-full rounded-r-full">
               Craft Your Clarified Era..
             </span>
           </div>
@@ -33,8 +33,8 @@ function ProgramHeader (){
             </div>
           </div>
         </div>
-        <div className="w-full md:w-[38%]  flex items-center  pl-4 pr-4 md:pl-0">
-                <img className="sm:w-2/3 lg:w-4/5 md:w-3/4 h-full" src="/images/image3.png" alt="About Us Image" />
+        <div className="w-full  lg:w-[40%]  flex items-center justify-center  p-4 md:p-0">
+                <img className=" w-64 sm:w-2/3 lg:w-4/5 md:w-3/4 h-[90%]" src="/images/image3.png" alt="About Us Image" />
             </div>
       </div>
   

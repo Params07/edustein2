@@ -13,7 +13,7 @@ const Register = () => {
     return (
        
         showRegisterForm ?( <div className="fixed top-0 left-0 z-10 w-full h-full flex justify-center items-center bg-black bg-opacity-50">
-        <div className="bg-white w-full h-max sm:w-[580px] sm:h-[518px] rounded-lg p-6 font-redhat flex flex-col space-y-4" >
+        <div className="bg-white w-full h-max sm:w-[580px] sm:h-[518px] rounded-lg p-6 font-redhat flex flex-col space-y-4 slide-in-left" >
          
          <span className="text-[#545454] font-semibold text-base">REGISTER FORM</span>
          <label className="relative">

@@ -13,7 +13,7 @@ const Contact = () => {
                 </div>
                 <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 items-center w-full md:w-auto">
                     <input
-                        className="h-12 w-full sm:h-14 md:w-[20rem] lg:w-[26rem] px-6 sm:py-3 text-black text-base sm:text-2xl rounded-lg focus:outline-none"
+                        className="h-12 w-full sm:h-14 md:w-[20rem] lg:w-[26rem] px-6 sm:py-3 text-navItems text-base sm:text-2xl rounded-lg focus:outline-none"
                         placeholder="Email address"
                     />
                     <button className="h-12  border-4 border-line hover:text-line hover:bg-white  bg-line text-white font-bold rounded-lg sm:py-3 px-16 text-base sm:text-2xl sm:h-full w-full md:w-auto">
