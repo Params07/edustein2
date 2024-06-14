@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext, useEffect,useRef } from "react";
 import { VscThreeBars } from "react-icons/vsc";
 import { IoCloseSharp } from "react-icons/io5";
 import Register from "./NavComponents/Register";
@@ -14,6 +14,8 @@ function Nav() {
   const [navBar, setNavBar] = useState(false);
   const [active, setActive] = useState(navItems[0].id);
   const { openRegisterForm } = useContext(GlobalStateContext);
+  const handleScrollRef = useRef();
+  const isScrolling = useRef(true);
 
   const handleClick = (id) => {
     setActive(id);
@@ -31,30 +33,37 @@ function Nav() {
         behavior: "smooth",
       });
     }
+
+    isScrolling.current = false;
   };
 
   useEffect(() => {
+    const sections = document.querySelectorAll(".section");
+
     const handleScroll = () => {
-      
-      navItems.forEach((item) => {
-        const element = document.getElementById(item.id);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          if (rect.top >= 20 && rect.top <= window.innerHeight / 2) {
-            setActive(item.id);
-          }
+      if (!isScrolling.current) {
+
+      }
+     else{
+      let current = "";
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if (window.scrollY + 100 >= sectionTop) {
+          current = section.getAttribute("id");
         }
       });
+      setActive(current);
+     }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    handleScrollRef.current = handleScroll;
+
+    window.addEventListener("scroll", handleScrollRef.current);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScrollRef.current);
     };
-  }, [navItems]);
-
-  return (
+  }, []);  return (
     <>
       <nav className={`fixed w-full h-16 sm:h-24 bg-white md:rounded-b-3xl px-6 md:py-6 grid items-center ${!navBar ? "rounded-b-3xl" : ""}`}>
         <div className="flex justify-between items-center">

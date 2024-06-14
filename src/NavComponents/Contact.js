@@ -3,7 +3,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 const Contact = () => {
     return (
        <>
-        <div id="contact" className="md:pt-88 w-full bg-[#0c2543] font-redhat pt-16 h-full  md:min-h-[22rem] md:pb-8 lg:pb-0 pb-12">
+        <div id="contact" className=" section md:pt-88 w-full bg-[#0c2543] font-redhat pt-16 h-full  md:min-h-[22rem] md:pb-8 lg:pb-0 pb-12">
             <div className="mx-4 md:mx-8 lg:mx-16  bg-[#2E3B4E] py-6 rounded-md grid gap-8 place-items-center xl:flex  grid items-center space-y-4 md:space-y-0 md:space-x-4 
                py-8  px-6 md:px-[91px] md:py-[65px]">
                 <div className="items-center md:pl-16 lg:pl-0 pl-0 flex justify-center w-full  xl:w-[30rem]">

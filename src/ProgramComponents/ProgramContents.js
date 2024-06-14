@@ -317,12 +317,12 @@ function ProgramContents({ activeProgram, setActiveProgram }) {
     ];
    
     return (
-        <>
+        <div id="program" className="section">
            {
             activeProgram? <ProgramsList programs={programs} handleProgram={handleProgram} setId={setId}/>:
             <ExplorerData explorerData={explorerData[id]} handleProgram={handleProgram}/>
            }
-        </>
+        </div>
     );
     
 }
