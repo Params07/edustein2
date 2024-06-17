@@ -5,11 +5,13 @@ import Contact from './NavComponents/Contact.js';
 import Program from './NavComponents/Program.js';
 import About from './NavComponents/About.js';
 import { GlobalStateProvider } from './UseContextComponents/GlobalStateProvider.js';
+import Home from './NavComponents/Home.js';
 
 function App() {
   return (
    <GlobalStateProvider>
      <Nav/>
+     <Home/>
     <Program/>
     <About/>
     <Contact/>

@@ -1,6 +1,6 @@
 function ProgramsList({ programs, handleProgram, setId }) {
     return (
-        <div className="bg-[#0c2543] w-full p-0 sm:p-8 md:p-16">
+        <div className="bg-[#0c2543] w-full p-4 sm:p-8 xl:p-16">
             <div className="bg-[#2E3B4E] py-6 rounded-md">
                 <div className="text-center font-redhat">
                     <span className="text-white font-bold text-3xl">Our Programs</span>
@@ -9,15 +9,16 @@ function ProgramsList({ programs, handleProgram, setId }) {
                     {programs.map((program, index) => (
                         <div
                             key={index}
-                            className="pb-6 sm:pb-0 w-full md:w-3/5 sm:w-4/5 lg:w-full h-112 sm:h-[32rem] lg:h-[28rem]  xl:h-[34.875rem] bg-white rounded-md md:rounded-xl p-3 md:p-4 xl:p-8"
+                            className="pb-6 sm:pb-0 w-full md:w-[32rem] sm:w-4/5 lg:w-[28rem] xl:w-[30rem] 2xl:w-[34rem] h-112 h-[29rem] sm:h-[32rem]   xl:h-[34.875rem] bg-white rounded-md md:rounded-xl p-4 xl:p-8"
                         >
                             <div>
                                 <span className="font-redhat font-semibold text-xl xl:text-2xl">{program.title}</span>
                             </div>
-                            <div className="w-full  h-[48%] sm:h-[58%] md:h-[51%] 2xl:h-2/3 xl:h-3/5 flex justify-center text-[#0D2443]">
-                                <img src={program.src} className="mx-auto h-full w-48 lg:w-[22rem]" alt={program.title} />
+                            <div className="  w-full  h-[16rem] sm:h-[18rem] md:h-[19rem]  2xl:h-2/3 xl:h-[18rem]
+                             flex justify-center text-[#0D2443]">
+                                <img src={program.src} className="mx-auto  h-full w-48 sm:w-[12rem]  md:w-[15rem] lg:w-[16rem] xl:w-[16rem]" alt={program.title} />
                             </div>
-                            <div className="my-4 font-redhat font-normal md:font-semibold text-sm sm:text-base text-[#44544ADE]">
+                            <div className="my-4 font-redhat font-normal sm:font-semibold text-sm sm:text-base text-[#44544ADE]">
                                 <span>{program.content}</span>
                             </div>
                             <div className="w-full h-8 mt-4 font-redhat">

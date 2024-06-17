@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import ProgramHeader from "../ProgramComponents/ProgramHeader";
+import ProgramHeader from "./Home";
 import ProgramContents from "../ProgramComponents/ProgramContents";
 
 const Program = () => {
@@ -9,10 +9,10 @@ const Program = () => {
       setActiveProgram(true)
     },[])
   return (
-   <>
-   {activeProgram?<ProgramHeader/>:""}
+   
+   
    <ProgramContents activeProgram={activeProgram} setActiveProgram={setActiveProgram}/>
-   </>    
+   
   );
 }
 
