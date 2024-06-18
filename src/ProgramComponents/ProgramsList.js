@@ -16,7 +16,7 @@ function ProgramsList({ programs, handleProgram, setId }) {
                             <div>
                                 <span className="font-redhat font-semibold text-xl xl:text-2xl">{program.title}</span>
                             </div>
-                            <div className="  w-full  h-[16rem] sm:h-[18rem] md:h-[19rem]  2xl:h-2/3 xl:h-[18rem]
+                            <div className="  w-full  h-[15rem] sm:h-[18rem] md:h-[19rem]  2xl:h-2/3 xl:h-[18rem]
                              flex justify-center text-[#0D2443]">
                                 <img src={program.src} className="mx-auto  h-full w-48 sm:w-[12rem]  md:w-[15rem] lg:w-[16rem] xl:w-[16rem]" alt={program.title} />
                             </div>
